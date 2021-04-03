@@ -10,7 +10,9 @@ import glob
 import shutil
 import pdf2image
 
-
+'''
+Création d'un dossier
+'''
 def createDir(path):
   if os.path.exists(path):
   	shutil.rmtree(path)
