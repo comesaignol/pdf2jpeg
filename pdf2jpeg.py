@@ -5,6 +5,7 @@ Created on Thu Mar 11 10:33:36 2021
 @author: Saignol
 """
 
+import param
 import os
 import glob
 import shutil
@@ -18,15 +19,16 @@ def createDir(path):
   	shutil.rmtree(path)
   os.mkdir(path)
 
-# Création du fichier output
+# Création du dossier output
 cwd = os.getcwd()
-path = os.path.join(cwd, "output")
+path = os.path.join(cwd, param.output)
 createDir(path)
 
 # Liste des PDF
-path = os.path.join(cwd, "*.pdf")
+path = os.path.join(cwd, param.input, "*.pdf")
 pdfList = glob.glob(path)
 
+# On parcoure les PDFS
 for pdf in pdfList:
   
   # Nom des fichiers
@@ -37,9 +39,10 @@ for pdf in pdfList:
   createDir(path)
   
   # Conversion des images
-  images = pdf2image.convert_from_path(pdf, dpi=200)
+  images = pdf2image.convert_from_path(pdf, dpi=param.dpi)
   
+  # Création des images
   for i in range(len(images)):
-    path = os.path.join(cwd, "output", pdfName, pdfName + str(i+1) +'.jpg', )
+    path = os.path.join(cwd, "output", pdfName, pdfName + "_" + str(i+1) +'.jpeg', )
     images[i].save(path, 'JPEG')
     print("Done", path)
