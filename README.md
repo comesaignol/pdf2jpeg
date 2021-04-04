@@ -22,12 +22,12 @@ Pour installer les librairies manquantes :
     
 ## Usage
 
-Le fichier param.py comporte deux paramètres à ajuster suivant les besoins du projet :
+Le fichier param.py comporte deux paramètres à configurer suivant les besoins du projet :
 
 * « input » qui fournit le dossier d’entrée. La valeur par défaut est « corpus »
 * « output » qui fournit le dossier de sortie. La valeur par défaut est « output ».
 * « dpi » qui définie la qualité du fichier JPEG en DPI.  La valeur par défaut est « 200 ».
 
-Une fois les paramètres ajustés, importer les fichiers PDF dans le dossier « corpus ».
+Une fois les paramètres configurés, importer les fichiers PDF dans le dossier « corpus ».
 
 Exécuter le fichier « pdf2jpeg.py ».
