@@ -7,18 +7,15 @@ pdf2jpeg est un petit outil développé en Python 3 permettant la conversion de 
 
 ## Installation
 
-pdf2jpeg nécessite une installation Python 3 avec les librairies suivantes : os ; glob ; shutil et pdf2image.
+pdf2jpeg nécessite une installation Python 3 avec la version 1.14.0 du package pdf2image.
 
-Pour vérifier les librairies installées :
+Pour vérifier les packages installées :
     
     pip freeze
 
-Pour installer les librairies manquantes :
+Pour installer les packages manquants :
 
-    pip install os
-    pip install glob
-    pip install shutil
-    pip install pdf2image
+    pip install -r path\to\requirements.txt
     
 ## Usage
 
