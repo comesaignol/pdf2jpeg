@@ -3,7 +3,7 @@
 
 ## Présentation
 
-pdf2jpeg est un petit outil développé en Python 3 permettant la conversion de fichier PDF au format JPEG par lot. Pour un nombre donné de fichiers PDF, pdf2jpeg crée autant de dossier comportant les versions JPEG des numérisations. Utile pour les équipes de recherches en Humanités numériques, l’outil automatise la conversion de fichiers en évitant les solutions propriétaires.
+pdf2jpeg est un outil développé en Python 3 permettant la conversion de fichier PDF au format JPEG par lot. Pour un nombre donné de fichiers PDF, pdf2jpeg crée autant de dossier comportant les versions JPEG des numérisations. Utile pour les équipes de recherches en Humanités numériques, l’outil automatise la conversion de fichiers en évitant les solutions propriétaires.
 
 ## Installation
 
